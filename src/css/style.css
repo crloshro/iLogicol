@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+}
+.navBar {
+  display: flex;
+  width: 100vw;
+  background: #ff0;
+}
+.navBar img {
+  height: 100px;
+}
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: inherit;
+  list-style: none;
+  margin-right: 50px;
+}
+.navList li {
+  margin-right: 40px;
+}
