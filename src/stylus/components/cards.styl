@@ -1,0 +1,51 @@
+.hero
+  display:grid
+  grid-template:160px 100px 50px/1fr 1fr 1fr
+  grid-template-areas:  "card-1 card-2 card-3"\
+                        "card-1 card-2 card-3"\
+                        "cont-1 cont-2 cont-3"
+  
+  margin-top:50px
+  grid-column-gap: 20px
+  // grid-row-gap:20px
+  padding-left:10px
+
+
+.card-1
+  grid-area: card-1
+  border:1px solid blue
+  border-radius:cardBorder
+  & h4
+    text-align:center
+    margin-top:10px
+
+.card-2
+  grid-area: card-2
+  border:1px solid blue
+  border-radius:cardBorder
+  & h4
+    text-align:center
+    margin-top:10px
+.card-3
+  grid-area: card-3
+  border:1px solid blue
+  border-radius:cardBorder
+  & h4
+    text-align:center
+    margin-top:10px
+.card-4
+  grid-area: card-4
+.card-5
+  grid-area: card-5
+.card-6
+  grid-area: card-6
+
+.cont-1
+  grid-area:cont-1
+  border:1px solid red
+.cont-2
+  grid-area:cont-2
+  border:1px solid red
+.cont-3
+  grid-area:cont-3
+  border:1px solid red
