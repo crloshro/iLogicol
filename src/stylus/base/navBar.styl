@@ -1,0 +1,51 @@
+nav
+  background-color:primaryColor
+  width:100%
+  height:50px
+  display:flex
+  align-items: center
+
+
+.topNav
+  display:flex
+  width:100%
+  height:100%
+  justify-content: flex-end
+  align-items: center
+  & li
+    list-style: none
+    width:15%
+    text-align:center
+    position:relative
+  & li:hover
+    background-color:darken(primaryColor,20%)
+    border-radius:20px
+  & li:hover .submenu
+    display:flex
+
+  & li a
+    display:block
+    padding:5px
+    color:white
+    text-decoration:none
+    font-size:15px
+    
+
+.submenu
+  position:absolute
+  display:none
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width:100%
+  height:auto
+  
+  & li a:hover
+    background-color:darken(primaryColor,20%)
+  & li
+    width:100%
+  & li a
+    display:block
+    padding:5px
+    background-color:primaryColor
+    

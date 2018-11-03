@@ -8,6 +8,9 @@
   display: flex;
   height: 50px;
 }
+.itemImg img {
+  max-width: 100%;
+}
 nav {
   background-color: #3cbbe4;
   width: 100%;
@@ -64,17 +67,15 @@ nav {
 }
 .container {
   display: grid;
-  grid-template: 4fr 2fr 1fr/100vw;
-  grid-template-areas: "layoutImg" "hero" "footer";
-  height: 100vh;
-  overflow: hidden;
+  grid-template: 50vh 50vh 20vh/30vw 70vw;
+  grid-template-areas: "itemImg itemImg" "navLeft hero" "footer footer";
 }
-.layoutImg {
-  grid-area: layoutImg;
-}
-.layoutImg img {
-  object-fit: cover;
+.itemImg {
+  grid-area: itemImg;
   max-width: 100%;
+}
+.navLeft {
+  grid-area: navLeft;
 }
 .hero {
   grid-area: hero;

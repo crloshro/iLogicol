@@ -1,0 +1,21 @@
+.container
+  display:grid
+  grid-template:4fr 2fr 1fr/100vw
+  grid-template-areas:  "layoutImg"\
+                        "hero"\
+                        "footer"
+  height:100vh
+  overflow: hidden
+
+.layoutImg
+  grid-area: layoutImg
+
+  & img
+    object-fit:cover
+    max-width:100%
+
+.hero
+  grid-area:hero
+
+.footer
+  grid-area:footer
