@@ -21,6 +21,7 @@ nav {
   height: 100%;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 20px;
 }
 .topNav li {
   list-style: none;
@@ -41,6 +42,10 @@ nav {
   color: #fff;
   text-decoration: none;
   font-size: 15px;
+}
+.courses {
+  background: #12647e;
+  border-radius: 10px;
 }
 .submenu {
   position: absolute;
@@ -64,17 +69,27 @@ nav {
 }
 .container {
   display: grid;
-  grid-template: 4fr 2fr 1fr/100vw;
-  grid-template-areas: "layoutImg" "hero" "footer";
+  grid-template: 4fr 2fr 1fr/1fr 2fr;
+  grid-template-areas: "info layoutImg" "hero hero" "footer footer";
   height: 100vh;
   overflow: hidden;
+  object-fit: cover;
+}
+.info {
+  grid-area: info;
+  align-self: center;
 }
 .layoutImg {
   grid-area: layoutImg;
+  object-fit: cover;
+  width: 100vh;
+  height: auto;
+  overflow: hidden;
+  justify-self: flex-end;
 }
 .layoutImg img {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
 }
 .hero {
   grid-area: hero;
